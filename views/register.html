@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Mercado liebre</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/normalize.css" rel="stylesheet"> 
+        
+    </head>
+
+    <body>
+
+        <header class="main-header">
+            <div class="main-header-top-bar">
+                <div class="header-top-bar-mobile">
+                    <a href="/"><img class="logo" src="images/logo-mercado-liebre.svg" alt="Mercado liebre papá lo mas grande que hay"/></a>
+                    <input class="buscador" type="text">
+                </div>
+                    <div class="copy-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</div>
+            </div>
+
+                <a href="#" class="burger-menu">
+                <i class="fas fa-bars"></i>
+                </a>   
+
+            <nav class="barraNavegacion">
+                <ul class="barraNavegacionIzquierda">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+
+                <ul class="barraNavegacionDerecha">
+                    <li><a href="/registrarse">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="/registrarse" method="POST" class="registro">
+
+                <div class="tituloLogin">Formulario de registro </div>
+                    <div>
+                        <label for="nombre" class="ocultarLabel">Nombre y apellido</label>
+                        <input type="text" id="nombre"  name="nombre" placeholder="Nombre y Apellido">
+                    </div>
+
+                    <div>
+                        <label for="nombreUsuario" class="ocultarLabel">Nombre de usuario</label>
+                        <input type="text" id="nombreUsuario"  name="nombreUsuario"  placeholder="Nombre de usuario">
+                    </div>
+                    
+                    
+                    <div>
+                        <label for="email" class="ocultarLabel">E-mail</label>
+                        <input type="email" id="email"  name="email" placeholder="E-mail">
+                    </div>
+
+                    <span class="labelsVisibles">Fecha de nacimiento</span>
+
+                    <div>
+                        <label for="fechaNacimiento" class="ocultarLabel">Fecha de nacimiento</label>
+                        <input type="date" id="fechaNacimiento"  name="fechaNacimiento">
+                    </div>
+
+                    <div>
+                        <label for="domicilio" class="ocultarLabel">Domicilio</label>
+                        <input type="text" id="domicilio"  name="domicilio" placeholder="Domicilio">
+                    </div>
+
+                    <span class="labelsVisibles">Perfil de usuario</span>
+
+                    <div>
+                        <select name="select">
+                            <option value="comprar" selected>Comprar</option>
+                            <option value="vender">Vender</option>
+                        </select>
+                    </div>
+
+                    <span class="labelsVisibles">Intereses</span>
+
+                    <div>
+                        <div>
+                            <input class="opcionesCheckbox" type="checkbox" name="categoriasInteres" id="electro" value="electro">
+                            <label for="electro">Electro</label>
+                        </div>
+                        <div>
+                            <input class="opcionesCheckbox" type="checkbox" name="categoriasInteres" id="moda" value="moda">
+                            <label for="moda">Moda</label>
+                        </div>
+                        <div>
+                            <input class="opcionesCheckbox" type="checkbox" name="categoriasInteres" id="hogar" value="hogar">
+                            <label for="hogar">Hogar</label>
+                        </div>
+                        <div>
+                            <input class="opcionesCheckbox" type="checkbox" name="categoriasInteres" id="jugueteria" value="jugueteria">
+                            <label for="jugueteria">Juguetería</label>
+                        </div>
+                        <div>
+                            <input class="opcionesCheckbox" type="checkbox" name="categoriasInteres" id="vidaSana" value="vidaSana">
+                            <label for="vidaSana">Vida Sana</label>
+                        </div>
+                    </div>
+
+                    <span class="labelsVisibles"><label for="avatar">Imagen de perfil</label></span>
+
+                    <div>
+                        <div>
+                            <input class="cargaImagen" type="file" name="avatar" id="avatar" accept=".jpg,.png,.img">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña"> 
+                        <label class="ocultarLabel" for="contrasenia">Contraseña</label>
+                    </div>
+
+                    <div>
+                        <input type="password" name="contraseniaConfirmada" id="contraseniaConfirmada" placeholder="Confirma tu contraseña"> 
+                        <label class="ocultarLabel" for="contraseniaConfirmada">Confirmar contraseña</label>
+                    </div> 
+                <button type="submit" value="Enviar"> Enviar
+                <button type="reset" value="Borrar"> Borrar
+            </form>
+        </main>
+
+
+
+        <footer>
+            <section>
+                <ul class="cajasFooter">
+                    <div>
+                        <i class="fas fa-credit-card"></i>
+                        <p class="titulosFooter">Pagá con tarjeta o en efectivo</p>
+                        <p>Con Mercado liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fas fa-gift"></i>
+                        <p class="titulosFooter">Envío gratis desde $2.500</p>
+                        <p>Solo por estar registrad@ en Mercado liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fas fa-user-shield"></i>
+                        <p class="titulosFooter">Seguridad, de principio a fin</p>
+                        <p>Solo por estar registrad@ en Mercado liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                    </div>
+                </ul>
+            </section>
+        <div class="copyright">Copyright © 1999-2020 Mercadoliebre S.R.L.</div>
+        </footer>
+
+
+
+    </body>
+
+</html>

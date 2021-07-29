@@ -1,0 +1,402 @@
+/******* PALETA DE COLORES ********
+
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+**********************************/
+
+/******************* CELULARES (MOBILE FIRST) ******************/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*********** HEADER ************/
+
+.main-header{
+    background-color:  #EAC926;
+    padding:20px;
+    overflow: hidden;
+}
+
+.copy-header{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.barraNavegacion{
+    display: none;
+}
+
+.barraNavegacion ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barraNavegacion a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.header-top-bar-mobile{
+    display:flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.buscador{
+    border-radius: 4px;
+    border: 1px solid #f5f5f5;
+    padding:8px;
+    width: 60%;
+    margin-left: 10px;
+}
+
+.logo{
+    width:50%;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    color: #ffffff;
+    display:block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.banner{
+    width: 100vw;
+    display:flex;
+}
+
+
+/*********** MAIN (PRODUCTOS) ************/
+
+main{
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+article{
+    margin-bottom: 25px;
+}
+
+ul{
+    padding: 0;
+}
+
+.fotosProductos{
+    width: 100%;
+    display:flex;
+}
+
+.titulares{
+    font-size: 24px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.precios{
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    
+}
+.descripciones{
+    font-size: 16px;
+    display:none;
+}
+
+.cajaProductos{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: #FFF;
+    position:relative;
+}
+
+.cajaProductos i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+   
+   
+
+/*********** FOOTER ************/
+
+footer{
+    text-align: center;
+}
+
+footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+footer section{
+    padding: 10px;
+}
+
+.cajasFooter div{
+    padding:10px;
+}
+
+p{
+    font-size: 12px;
+    color: #666;
+    margin:0;
+}
+
+.titulosFooter{
+    color: #666;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.copyright{
+    margin: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+/*************************************** REGISTRO *****************************************************/ 
+
+.ocultarLabel{
+    display: none;
+}
+
+.registro{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    min-width: 150px;
+    margin:auto;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.registro>div{
+    margin-bottom: 10px;
+}
+
+input{
+    border-radius: 4px;
+    border: 1px solid #f5f5f5;
+    padding:8px;
+    width: 80%;
+}
+
+.cargaImagen{
+    border: 0px;
+    padding: 0 0 5px 0;
+}
+
+.labelsVisibles{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 0px;
+    background-color: #03264C;
+    border-radius: 6px;
+    color: #ffffff;
+    width: 80%;
+}
+
+button:hover{
+    background-color: #EAC926;
+    color: #000000;
+}
+
+.opcionesCheckbox{
+    width: 5%;
+}
+
+
+/* LOGIN */
+
+.tituloLogin{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+  
+/********************* MEDIA QUERIES ********************/
+
+/** NAVEGACION EN TABLETS **/
+
+@media (min-width: 361px){
+
+    /*********** HEADER ************/
+
+    .main-header-top-bar{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width:100%;
+        height: 100%;
+        margin-right: 100px;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .barraNavegacion{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barraNavegacion ul{
+        display:flex;
+    }
+
+    .barraNavegacion li{
+        margin: 0 5px;
+    }
+
+    /*********** MAIN  ***********/
+
+    section{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    article{
+        width: 46%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 10px;
+    }
+
+
+    /*********** FOOTER ************/
+
+    .burger-menu{
+        display: none;
+    }
+}
+
+/** NAVEGACION EN DESKTOP **/
+
+@media (min-width: 769px){   
+
+    /*********** HEADER ************/
+
+    .main-header-top-bar, .barraNavegacion{
+        max-width: 1200px;
+        margin:auto;
+    }
+
+    /* .main-header-top-bar{
+    } */
+
+    .copy-header{
+        margin:0;
+        max-width:none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .barraNavegacion{
+        margin-top: 40px;
+    }
+
+    .barraNavegacion li{
+        margin: 0 10px;
+    }
+
+    .barraNavegacion a{
+        font-size: 19px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+
+    /*********** MAIN ************/
+   
+    section{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    article{
+        width: 23%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .descripciones:hover{
+            display:block;
+    }
+
+
+    /*********** FOOTER ************/
+
+    .cajasFooter{
+        display:flex;
+        justify-content: space-between;
+    }
+    .registro{
+        width: 40%;
+    }
+}
+
+
+
+
